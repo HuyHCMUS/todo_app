@@ -13,3 +13,4 @@ export interface TodoContextType {
   deleteTodo: (id: string) => Promise<boolean>;
   updateTodo: (id: string, title: string) => Promise<boolean>;
 }
+

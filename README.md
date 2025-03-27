@@ -6,6 +6,7 @@ A modern, feature-rich Todo application built with React Native, Expo, and TypeS
 
 - ✨ Create, read, update, and delete todos
 - 💾 Persistent storage using AsyncStorage
+- 🌓 Dark mode support
 - 🎯 TypeScript for type safety
 - 💅 Styled with TailwindCSS (NativeWind)
 - 📱 Cross-platform (iOS, Android)
@@ -88,6 +89,12 @@ todo-app/
 - Delete todos
 - Persistent storage across app restarts
 
+### UI/UX
+- Smooth animations for todo items
+- Dark mode support
+- Clean and modern interface
+- Responsive design
+
 ### Development Features
 - Type-safe development with TypeScript
 - Modern styling with TailwindCSS
@@ -119,3 +126,8 @@ If you encounter any issues:
    - Ensure all dependencies are correctly installed
    - Check if your development environment meets the prerequisites
    - Try clearing the Expo cache: `expo r -c`
+
+## Support
+
+For support, please open an issue in the repository or contact the maintainers.
+

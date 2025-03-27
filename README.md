@@ -1,50 +1,121 @@
-# Welcome to your Expo app 👋
+# Todo App with React Native & Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, feature-rich Todo application built with React Native, Expo, and TypeScript. This app demonstrates best practices in mobile development with features like persistent storage, animations, and dark mode support.
 
-## Get started
+## Features
 
-1. Install dependencies
+- ✨ Create, read, update, and delete todos
+- 💾 Persistent storage using AsyncStorage
+- 🎯 TypeScript for type safety
+- 💅 Styled with TailwindCSS (NativeWind)
+- 📱 Cross-platform (iOS, Android)
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14 or newer)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Expo Go](https://expo.dev/client) app on your mobile device
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd todo-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+```bash
+npx expo start
+```
+
+## Running the App
+
+After starting the development server, you have several options to run the app:
+
+1. **On your phone:**
+   - Install the Expo Go app
+   - Scan the QR code shown in the terminal with your phone's camera
+   - The app will open in Expo Go
+
+2. **On iOS Simulator:**
+   - Press `i` in the terminal
+   - Make sure you have Xcode installed
+
+3. **On Android Emulator:**
+   - Press `a` in the terminal
+   - Make sure you have Android Studio and an emulator set up
+
+## Project Structure
+
+```
+todo-app/
+├── app/
+│   ├── (tabs)/                 # Tab navigation screens
+│   ├── components/             # Reusable components
+│   ├── context/               # Context providers
+│   ├── types/                 # TypeScript type definitions
+│   └── _layout.tsx           # Root layout configuration
+├── assets/                    # Static assets
+└── ...configuration files
+```
+
+## Key Technologies
+
+- [Expo](https://expo.dev/) - Development platform
+- [React Native](https://reactnative.dev/) - Mobile framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [NativeWind](https://www.nativewind.dev/) - TailwindCSS for React Native
+- [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - Animations
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) - Persistent storage
+- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based routing
+
+## Features in Detail
+
+### Todo Management
+- Create new todos with a title
+- Mark todos as complete/incomplete
+- Edit todo titles
+- Delete todos
+- Persistent storage across app restarts
+
+### Development Features
+- Type-safe development with TypeScript
+- Modern styling with TailwindCSS
+- File-based routing with Expo Router
+- Context-based state management
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. **Metro bundler issues:**
    ```bash
+   # Clear metro bundler cache
+   npx expo start -c
+   ```
+
+2. **Dependencies issues:**
+   ```bash
+   # Remove node_modules and reinstall
+   rm -rf node_modules
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. **Build issues:**
+   - Ensure all dependencies are correctly installed
+   - Check if your development environment meets the prerequisites
+   - Try clearing the Expo cache: `expo r -c`
